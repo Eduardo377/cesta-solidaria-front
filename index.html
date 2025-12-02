@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Solidária - Doe Esperança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>A fome tem pressa.</h1>
+            <p>Sua solidariedade coloca comida na mesa de quem mais precisa.</p>
+        </div>
+    </header>
+
+    <section class="donation-section">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Escolha como ajudar</h2>
+                <p>Todo valor é revertido integralmente em alimentos.</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-header">
+                        <span class="icon">☕</span>
+                        <h3>Kit Café</h3>
+                    </div>
+                    <div class="price">R$ 30<small>,00</small></div>
+                    <ul class="features">
+                        <li>Leite e Café</li>
+                        <li>Pão e Biscoitos</li>
+                        <li>Ajuda 1 Pessoa</li>
+                    </ul>
+                    <button class="btn-donate">Doar Kit</button>
+                </article>
+
+                <article class="card featured">
+                    <div class="badge">Mais Doado</div>
+                    <div class="card-header">
+                        <span class="icon">📦</span>
+                        <h3>Cesta Básica</h3>
+                    </div>
+                    <div class="price">R$ 80<small>,00</small></div>
+                    <ul class="features">
+                        <li><strong>Arroz e Feijão (5kg)</strong></li>
+                        <li>Óleo e Macarrão</li>
+                        <li>Enlatados e Farinha</li>
+                        <li>Alimenta uma Família</li>
+                    </ul>
+                    <button class="btn-donate primary">Doar Cesta</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <span class="icon">❤️</span>
+                        <h3>Padrinho</h3>
+                    </div>
+                    <div class="price">R$ 160<small>,00</small></div>
+                    <ul class="features">
+                        <li>2 Cestas Completas</li>
+                        <li>Produtos de Higiene</li>
+                        <li>Entrega Prioritária</li>
+                        <li>Alimenta 2 Famílias</li>
+                    </ul>
+                    <button class="btn-donate">Ser Padrinho</button>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="modalPix" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+
+            <div class="modal-header">
+                <h2>Pague com Pix</h2>
+                <p>Seu apoio alimenta vidas. Escaneie o código abaixo:</p>
+            </div>
+
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ChavePixFicticia123"
+                    alt="QR Code Pix" class="qr-image">
+            </div>
+
+            <div class="pix-key-container">
+                <p>Ou copie a chave Pix:</p>
+                <div class="input-group">
+                    <input type="text" value="email@campanhasolidaria.org.br" id="pixKey" readonly>
+                    <button onclick="copyPix()" class="btn-copy">Copiar</button>
+                </div>
+                <div id="copyFeedback" class="hidden">Chave copiada com sucesso!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #ff6b35;
+  --primary-hover: #e55a2b;
+  --secondary-color: #2c3e50;
+  --bg-light: #f4f7f6;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.donation-section {
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card.featured {
+  border: 2px solid var(--primary-color);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.card-header .icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+}
+.price small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 2rem;
+  color: #666;
+}
+.features li {
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 0.8rem;
+}
+
+.btn-donate {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: var(--secondary-color);
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.btn-donate:hover {
+  background-color: #d0d0d0;
+}
+.btn-donate.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-donate.primary:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #aaa;
+}
+.close-btn:hover {
+  color: #000;
+}
+
+.qr-image {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+.btn-copy {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#copyFeedback {
+  color: #27ae60;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#copyFeedback.visible {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card.featured {
+    transform: none;
+  }
+  .card.featured:hover {
+    transform: translateY(-5px);
+  }
+}

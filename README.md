@@ -35,3 +35,26 @@ Desenvolvida com foco em UX, transparência e facilidade de doação (Pix Modal)
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Eduardo377/cesta-solidaria-front.git
+
+    ## 👨‍💻 Autor
+
+<table style="border: none;">
+  <tr>
+    <td width="80px">
+      <img src="https://github.com/Eduardo377.png" width="80px;" alt="Foto de Eduardo Gomes"/>
+    </td>
+    <td>
+      <strong>Eduardo Gomes Andrade</strong>
+      <br />
+      <sub>Fullstack Developer | Cybersecurity Student</sub>
+      <br />
+      <br />
+      <a href="https://www.linkedin.com/in/eduardogomesandrade/" target="_blank">
+        <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+      </a>
+      <a href="mailto:seuemail@exemplo.com">
+        <img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email Badge">
+      </a>
+    </td>
+  </tr>
+</table>

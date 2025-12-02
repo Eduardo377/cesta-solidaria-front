@@ -1,5 +1,5 @@
 > 🟢 **Projeto Online:**
-> [Acesse aqui na vercel](https://cesta-solidaria.vercel.app)
+> [Acesse aqui na vercel](https://cesta-solidaria.vercel.app)<b>
 > [Acesse aqui na netlify](https://cesta-solidaria.netlify.app)
 
 # 🍲 Food Donation Landing Page

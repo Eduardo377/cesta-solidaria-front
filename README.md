@@ -36,21 +36,6 @@ Desenvolvida com foco em UX, transparência e facilidade de doação (Pix Modal)
    ```bash
    git clone https://github.com/Eduardo377/cesta-solidaria-front.git
 
-
-
-## 📂 Estrutura de Pastas
-
-
-```bash
-    ├── .gitignore
-    ├── index.html
-    ├── LICENSE
-    ├── README.md
-    ├── script.js
-    └── style.css
-
-```
-
 ## 👨‍💻 Autor
 
 <table style="border: none;">
@@ -74,17 +59,20 @@ Desenvolvida com foco em UX, transparência e facilidade de doação (Pix Modal)
   </tr>
 </table>
 
----
+## 📂 Estrutura de Pastas
+    ├── .gitignore
+    ├── index.html
+    ├── LICENSE
+    ├── README.md
+    ├── script.js
+    └── style.css
 
 ## 📝 Licença
 
-Este projeto está licenciado sob a **MIT License**.  
+Este projeto está licenciado sob a **MIT License**.
 Sinta-se à vontade para usar, modificar e compartilhar. 🤝
 
-```text
+
 MIT License
 
-Copyright (c) 2025 Eduardo Gomes
-```
-
----
+Copyright (c) 2025 Eduardo Andrade

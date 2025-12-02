@@ -49,10 +49,10 @@ Desenvolvida com foco em UX, transparência e facilidade de doação (Pix Modal)
       <sub>Fullstack Developer | Cybersecurity Student</sub>
       <br />
       <br />
-      <a href="https://www.linkedin.com/in/eduardogomesandrade/" target="_blank">
+      <a href="https://www.linkedin.com/in/eduardogomes377/" target="_blank">
         <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
       </a>
-      <a href="mailto:seuemail@exemplo.com">
+      <a href="mailto:eduardogomes377@Ggmail.com">
         <img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email Badge">
       </a>
     </td>
